@@ -1,10 +1,14 @@
-# Python program to find current  
+ # Python program to find current  
 # weather details of any city 
 # using openweathermap api 
 # Following guide: https://www.geeksforgeeks.org/python-find-current-weather-of-any-city-using-openweathermap-api/
+# and  https://developers.google.com/gmail/api/quickstart/python
 
-# import required modules
-#json is already installed with 3.8
+# import required modules: requests
+# Commands : pip install requests
+#            pip install virtualenv
+#            pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib 
+# json & re is already installed with 3.8
 import requests, json, re
 
 def checkWeather():
