@@ -1,6 +1,6 @@
 Dear ${PERSON_NAME}, 
 
-It's going to rain today IN ${CITY}
+It's going to rain today.
 Wear warm clothes and an umbrella.
 Have a great day! 
 
