@@ -1,0 +1,7 @@
+Dear ${PERSON_NAME}, 
+
+It's going to rain today IN ${CITY}
+Wear warm clothes and an umbrella.
+Have a great day! 
+
+THIS MESSAGE IS AUTOMATED

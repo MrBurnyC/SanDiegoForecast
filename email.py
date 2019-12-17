@@ -43,7 +43,7 @@ def main():
     s.starttls()
     s.login(MY_ADDRESS, PASSWORD)
 
-    if(checkWeather() == "yes rain"):   # If there is weather, send emails
+    if(checkWeather() == "yes"): #If there is weather, send emails
         # For each contact, send the email:
         for name, email in zip(names, emails):
             msg = MIMEMultipart()       # create a message

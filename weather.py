@@ -11,6 +11,9 @@
 # json & re is already installed with 3.8
 import requests, json, re
 
+#Global Varibles
+city_name = "New York" 
+
 def checkWeather():
     # Enter your API key here
     api_key = "4a67c29e55e85ca95c17b4240e7fb9a4"
@@ -19,7 +22,8 @@ def checkWeather():
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     
     # Give city name 
-    city_name = input("Enter city name : ") 
+    #city_name = input("Enter city name : ")
+    #city_name = "New York" 
 
     # complete_url variable to store 
     # complete url address 
@@ -67,25 +71,26 @@ def checkWeather():
         weather_description = z[0]["description"] 
 
         # print following values 
-        print(" Temperature (in kelvin unit) = " +
-                        str(current_temperature) + 
-            "\n atmospheric pressure (in hPa unit) = " +
-                        str(current_pressure) +
-            "\n humidity (in percentage) = " +
-                        str(current_humidiy) +
-            "\n description = " +
-                        str(weather_description))
+        # print(" Temperature (in kelvin unit) = " +
+        #                 str(current_temperature) + 
+        #     "\n atmospheric pressure (in hPa unit) = " +
+        #                 str(current_pressure) +
+        #     "\n humidity (in percentage) = " +
+        #                 str(current_humidiy) +
+        #     "\n description = " +
+        #                 str(weather_description))
 
         if(is_word_in_text("rain", weather_description)):
-            print (" yes")
+            #print ("yes")
+            return "yes rain"
             #Send gmail to me
         else:
             #don't send nothing
-            print( "no")
+            #print( "no")
+            return "no rain"
 
     else: 
         print(" City Not Found ")   
-
 
 #https://stackoverflow.com/a/45587730
 def is_word_in_text(word, text):
